@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -7,15 +7,23 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+        @theme {
+            --font-display: "Outfit", "serif"; 
+        }
+    </style>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-slate-300">
-    <div class="grid bg-white m-auto justify-items-center rounded-[1.25em] max-w-xs xs:w-full">
-        <img class="m-[1em] rounded-xl w-[18em] h-[18em] mb-[1.5em] aspect-square" src="./image-qr-code.png" />
-        <div>
-            <div class="font-bold m-[1em] text-slate-900 mb-[1em] text-center">Improve your front-end skills by building projects</div>
-            <div class="text-slate-500 m-[1em] mb-[2.25em] text-center">Scan the QR code to visit Frontend Mentor and take your coding skill to the next level</div>
+<body class="bg-slate-300 h-[960px]">
+    <container class="grid place-items-center h-[100vh]">
+        <div class="grid bg-white m-auto justify-items-center rounded-[1.25em] max-w-xs xs:w-full">
+            <img class="m-[1em] rounded-xl w-[18em] h-[18em] mb-[1.5em] aspect-square" src="./image-qr-code.png" alt="QR Code" />
+            <div>
+                <div class="font-display text-[15px] font-bold text-sm m-[1em] text-slate-900 mb-[1em] text-center">Improve your front-end skills by building projects</div>
+                <div class="font-display text-[15px] font-normal text-sm text-slate-500 m-[1em] mb-[2.25em] text-center">Scan the QR code to visit Frontend Mentor and take your coding skill to the next level</div>
+            </div>
         </div>
-    </div>
+    </container>
 </body>
 </html>
